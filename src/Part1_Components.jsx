@@ -29,7 +29,9 @@ function SectionA() {
   // A1.
   // Declare a variable called myName and assign it your first name as a string.
   // Declare a variable called myCity and assign it the city you are from.
-
+  
+  let myName = "Jorys"
+  let myCity = "Ouagadougou"
 
   // A2.
   // Inside the return below, add a <p> tag that displays your name.
@@ -41,7 +43,7 @@ function SectionA() {
   //      React treats the text literally and prints the
   //      variable name instead of its value.
 
-
+   
   // A3.
   // Using your myName variable, display your name in all uppercase inside a <p> tag.
   // The text should update automatically if you change your name — do not hardcode it.
@@ -52,7 +54,8 @@ function SectionA() {
   // A5.
   // Declare a variable and assign it the result of 25 + 17.
   // Add a <p> tag that shows both the expression and the computed value on the same line.
-  //
+  let variable = 25 + 17
+
   // EXPLAIN: What is JSX? How is it different from plain HTML?
   //          Why do you need curly braces to embed a variable's value?
   //
@@ -61,8 +64,11 @@ function SectionA() {
   return (
     <div>
       <h2>Section A — JSX Basics</h2>
-      {/* Your output goes below this line */}
-
+       <p> {myName} </p> 
+       <p> {myCity} </p>
+       <p> {myName.toUpperCase()}</p>
+       <p> {myName.length}</p>
+       <p> variable : {variable}</p>
     </div>
   )
 }
